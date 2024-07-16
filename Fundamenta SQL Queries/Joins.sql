@@ -157,3 +157,10 @@ SELECT Customer_id FROM Sales_2015
 EXCEPT 
 SELECT Customer_id FROM Customer_20_60
 ORDER BY Customer_id;
+
+--- Union
+
+SELECT Customer_id FROM Sales_2015
+UNION
+SELECT Customer_id FROM Customer_20_60
+ORDER BY Customer_id;
