@@ -1,0 +1,22 @@
+--- User Access Control
+
+CREATE USER Starttech
+WITH PASSWORD 'Academy';
+
+GRANT SELECT, UPDATE, INSERT, DELETE ON Product TO Starttech;
+
+REVOKE DELETE ON Product FROM Starttech;
+
+REVOKE ALL ON Product FROM Starttech;
+
+DROP USER Starttech;
+
+ALTER USER Postgres RENAME TO Oxward;
+
+SELECT Usename FROM PG_USER;
+
+SELECT * FROM PG_USER;
+
+SELECT DISTINCT Usename FROM PG_STAT_ACTIVITY;
+
+SELECT DISTINCT * FROM PG_STAT_ACTIVITY;
